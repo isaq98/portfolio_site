@@ -1,0 +1,21 @@
+.overview-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    & > .about-text {
+        & > .tiny-hello-div {
+            height: 5px;
+        }
+        & > .name-div {
+            height: 30px;
+            & > h2 {
+                font-size: 40pt;
+            }
+        }
+        & > .statement-div {
+            & > h2 {
+                font-size: 40pt;
+            }
+        }
+    }
+}

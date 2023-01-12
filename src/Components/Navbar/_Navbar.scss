@@ -1,0 +1,23 @@
+.navigation-bar {
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    min-height: 75px;
+    & > .logo, .navigation-list-container {
+        height: 75%;
+        padding-top: 20px;
+    }
+    & > .logo {
+        padding-left: 20px;
+    }
+    & > .navigation-list-container {
+        padding-right: 20px;
+    }
+    & .navigation-list {
+        display: inline;
+        & > li {
+            display: inline;
+            padding: 10px;
+        }
+    }
+}
