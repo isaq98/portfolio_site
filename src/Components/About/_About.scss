@@ -1,0 +1,18 @@
+.about {
+    height: 100vh;
+    max-width: 900px;
+    margin: 0px auto;
+    & .about-me-container {
+        display: flex;
+
+        & .snippet-container {
+            max-width: 600px;
+            & > ul {
+                padding: 0px;
+                display: grid;
+                grid-template-columns: repeat(2, minmax(140px, 200px));
+                list-style: none;
+            }
+        }
+    }
+}

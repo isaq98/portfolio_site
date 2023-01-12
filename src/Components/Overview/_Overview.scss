@@ -1,20 +1,23 @@
-.overview-container {
-    display: flex;
-    justify-content: center;
-    padding-top: 10%;
-    & > .about-text {
-        & > .tiny-hello-div {
-            height: 5px;
-        }
-        & > .name-div {
-            height: 30px;
-            & > h2 {
-                font-size: 40pt;
+.overview {
+    height: 100vh;
+    .overview-container {
+        display: flex;
+        justify-content: center;
+        padding-top: 10%;
+        & > .about-text {
+            & > .tiny-hello-div {
+                height: 5px;
             }
-        }
-        & > .statement-div {
-            & > h2 {
-                font-size: 40pt;
+            & > .name-div {
+                height: 30px;
+                & > h2 {
+                    font-size: 40pt;
+                }
+            }
+            & > .statement-div {
+                & > h2 {
+                    font-size: 40pt;
+                }
             }
         }
     }
