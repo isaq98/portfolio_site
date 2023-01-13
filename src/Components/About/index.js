@@ -6,7 +6,15 @@ function About() {
         <section className="about">
             <h2 className="section-heading">About</h2>
             <div className="about-me-container">
-                <div className="photo-container">I will contain photo</div>
+                <div className="photo-container">
+                    <img
+                     className="img"
+                     width={400}
+                     height={600}
+                     src={require("../../Images/me.jpg")}
+                     alt="Sameer"
+                    />
+                </div>
                 <div className="snippet-container">
                     <h4>"Why not?"</h4>
                     <p>This was the question I asked myself in 2017 when advised to take a computer science class in university despite having no experience.</p>

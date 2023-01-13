@@ -4,9 +4,9 @@
     margin: 0px auto;
     & .about-me-container {
         display: flex;
-
         & .snippet-container {
             max-width: 600px;
+            padding-left: 50px;
             & > ul {
                 padding: 0px;
                 display: grid;
