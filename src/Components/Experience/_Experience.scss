@@ -2,4 +2,12 @@
     height: 100vh;
     max-width: 900px;
     margin: 0px auto;
+
+    & > .experience-container {
+        & .job-list {
+            & > .button-row {
+                display: flex;
+            }
+        }
+    }
 }
