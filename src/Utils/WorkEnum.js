@@ -29,3 +29,36 @@ export const workEnum = [
         ]
     }
 ];
+
+export const projectsEnum = [
+    {
+        title: 'Monthly Expense Tracker',
+        description: 'Full stack webapp for helping me track monthly expenses. Built with Python (Flask & SQLAlchemy), React, and SASS.',
+        technologies: ['Python', 'Flask', 'React', 'SASS']
+    },
+    {
+        title: 'Climbing Route Locator',
+        description: 'Single page webapp integrating the Mountain Project\'s API with Google Maps API for searching and identifying climbing routes in queried locations',
+        technologies: ['React', 'CSS']
+    },
+    {
+        title: 'Java Search Engine',
+        description: 'A completely functional search engine that functions through receivng a .txt file or URL',
+        technologies: ['Java', 'HTML']
+    },
+    {
+        title: 'Data Visualizations of the San Francisco Fire Department',
+        description: 'JavaScript and D3 based project that visualizes SFFD response times in different areas of San Francisco. Highlighting discrepencies between lower and higher income areas.',
+        technologies: ['JavaScript', 'D3']
+    },
+    {
+        title: 'TheMovieDB Search Tool',
+        description: 'Personal project leveraging TheMovieDB\'s API to help recommend movies. Built with JavaScript and CSS',
+        technologies: ['JavaScript', 'CSS']
+    },
+    {
+        title: 'Assembly Emulator',
+        description: 'A school project to emulate ARM Assembly instructions in C code',
+        technologies: ['C']
+    }
+]
