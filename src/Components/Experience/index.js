@@ -1,42 +1,44 @@
-import React from 'react';
+import React, {useState, useEffect } from 'react';
 import './_Experience.scss';
 import { workEnum } from '../../Utils/WorkEnum';
 
 function Experience() {
+    const [storedJSX, setJSX] = useState(null);
 
     const handleClick = (buttonIndex) => {
-        renderExperienceContent(buttonIndex);
+        setJSX(renderExperienceContent(buttonIndex));
     }
+
+    const renderExperienceContent = (buttonIndex) => {
+        if(!buttonIndex) {
+            buttonIndex = 0;
+        }
+        const { company, title, time, description } = workEnum[buttonIndex];
+        return (
+            <>
+                <h3 className="work-experience-header">{`${title} @ ${company}`}</h3>
+                <p>{time}</p>
+                <div className="work-experience-bulletins">
+                    <ul>
+                    {description.map((element) => {
+                        return (
+                            <li key={element}>{element}</li>
+                        )
+                    })}
+                    </ul>
+                </div>
+            </>
+        );
+    }
+
+    useEffect(() => {
+        setJSX(renderExperienceContent());
+    }, []);
 
     const renderExperienceButtons = () => {
         return workEnum.map((element, index) => {
             return <button className={`button-row ${index}`} key={element.company} onClick={() => handleClick(index)}>{element.company}</button>
         });
-    }
-
-    const renderExperienceContent = (buttonIndex) => {
-        // return workEnum.map((element, index) => {
-        //     if(buttonIndex === index || !buttonIndex) {
-        //         const { description } = element;
-        //         return (
-        //             <>
-        //                 <h3 key={element.company} className="work-experience-header">{`${element.title} @ ${element.company}`}</h3>
-        //                 <p>{element.time}</p>
-        //                 <div className="work-experience-bulletins">
-        //                     <ul>
-        //                     {description.map((element) => {
-        //                         return (
-        //                             <li key={element}>{element}</li>
-        //                         )
-        //                     })}
-        //                     </ul>
-        //                 </div>
-        //             </>
-        //         )
-        //     }
-        //     return null;
-        // })
-        console.log('index of enum is: ', workEnum[buttonIndex]);
     }
 
     return (
@@ -48,7 +50,7 @@ function Experience() {
                 </div>
                 <div className="job-styled-panel">
                     <div className="job-content">
-                        {renderExperienceContent()}
+                    {storedJSX}
                     </div>
                 </div>
             </div>

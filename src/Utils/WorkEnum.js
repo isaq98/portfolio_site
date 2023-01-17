@@ -18,5 +18,14 @@ export const workEnum = [
             "Developed and maintained vulnerability tracking dashboards utilizing Splunk and Python",
             "Interfaced with university officials and other IT teams to ensure complete and thorough solutions for preventative training and vulnerability prevention"
         ]
+    },
+    {
+        company: 'USF Research',
+        title: 'Data Visualization Intern',
+        time: 'May 2018 - July 2018',
+        description: [
+            "Collaborated with fellow classmates on an independent research project to visualize the results of cutting edge cancer treatment",
+            "Worked closely with professor/sponsor to develop, document, and create infographics leveraging Javascript and D3"
+        ]
     }
 ];
