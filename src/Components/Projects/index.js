@@ -29,7 +29,7 @@ function Projects() {
     }
 
     return(
-        <section className="projects">
+        <section className="projects" id="projects">
             <h2 className="section-header">Projects</h2>
             <div className="projects-container">
                 {renderProjectDivs()}
