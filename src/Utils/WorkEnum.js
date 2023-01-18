@@ -47,8 +47,8 @@ export const projectsEnum = [
         technologies: ['Java', 'HTML']
     },
     {
-        title: 'Data Visualizations of the San Francisco Fire Department',
-        description: 'JavaScript and D3 based project that visualizes SFFD response times in different areas of San Francisco. Highlighting discrepencies between lower and higher income areas.',
+        title: 'Data Visualizations of the SFFD',
+        description: 'JavaScript project visualizing SFFD response times in different areas of San Francisco. Highlighting discrepencies between lower & higher income areas.',
         technologies: ['JavaScript', 'D3']
     },
     {

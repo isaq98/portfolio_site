@@ -2,4 +2,51 @@
     height: 100vh;
     max-width: 900px;
     margin: 0px auto;
+    & .projects-container {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(3, 300px);
+        @media only screen and (max-width: 997px) {
+            grid-template-columns: repeat(auto-fill, 300px)
+        }
+        & > .project {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 300px;
+            border: 2px solid black;
+            header {
+                & > .project-title {
+                    padding: 5px 20px;
+                }
+                & .project-description-container {
+                    padding: 0px 20px;
+                }
+            }
+            footer {
+                .technology-list {
+                    padding: 0px 20px;
+                }
+            }
+        }
+        & .technology-list {
+            list-style: none;
+            display: inline-flex;
+            padding: 0.5em;
+            & > .technology-item {
+                padding-right: 0.5em;
+            }
+        }
+    }
+    & > .git-button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        & > .git-button {
+            background: transparent;
+            border-radius: 5px;
+            height: 50px;
+            width: 175px;
+        }
+    }
 }
