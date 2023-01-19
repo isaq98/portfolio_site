@@ -42,11 +42,16 @@
         display: flex;
         justify-content: center;
         margin-top: 50px;
-        & > .git-button {
-            background: transparent;
-            border-radius: 5px;
-            height: 50px;
-            width: 175px;
+        & > a {
+            & > .git-button {
+                background: transparent;
+                border-radius: 5px;
+                height: 50px;
+                width: 175px;
+            }
+            & > .git-button:hover {
+                cursor: pointer;
+            }
         }
     }
 }

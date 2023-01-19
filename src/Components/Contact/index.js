@@ -8,7 +8,7 @@ function Contact() {
             <div className="contact-div">
                 <h1 className="big-contact-font">Say Hello!</h1>
                 <p className="contact-text">I'm always open to making new connections. If you have any questions or would like to say hello, drop me an email! I'll get back to ya as soon as I can! </p>
-                <button className="contact-button">Get in Touch</button>
+                <a href="mailto: isaq98@gmail.com"><button className="contact-button">Get in Touch</button></a>
             </div>
         </section>
     )

@@ -35,7 +35,7 @@ function Projects() {
                 {renderProjectDivs()}
             </div>
             <div className="git-button-container">
-                <button className="git-button">See more on my GitHub</button>
+                <a href="https://github.com/isaq98" target="_blank" rel="noopener noreferrer"><button className="git-button">See more on my GitHub</button></a>
             </div>
         </section>
     )
