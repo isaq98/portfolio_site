@@ -1,4 +1,5 @@
 import React from 'react';
+import Socials from '../Socials';
 import './_Overview.scss';
 
 function Overview(props) {
@@ -20,6 +21,7 @@ function Overview(props) {
                     </div>
                 </div>
             </div>
+            <Socials />
         </section>
     )
 }
