@@ -7,6 +7,7 @@ function Projects() {
     const renderProjectDivs = () => {
         return projectsEnum.map((project, index) => {
             return (
+                <a href={project.link}>
                 <div key={project.title} className={`project ${index}`}>
                 <header>
                     <h3 className="project-title">{project.title}</h3>
@@ -24,6 +25,7 @@ function Projects() {
                 </ul>
                 </footer>
             </div>
+            </a>
             )
         });
     }

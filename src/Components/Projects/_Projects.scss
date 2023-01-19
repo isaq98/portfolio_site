@@ -9,12 +9,18 @@
         @media only screen and (max-width: 997px) {
             grid-template-columns: repeat(auto-fill, 300px)
         }
+
+        & > a {
+            display: flex;
+            text-decoration: none;
+            color: black;
         & > .project {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             width: 300px;
             border: 2px solid black;
+            transition: transform 250ms;
             header {
                 & > .project-title {
                     padding: 5px 20px;
@@ -29,6 +35,9 @@
                 }
             }
         }
+        & > .project:hover {
+            transform: translateY(-10px);
+        }
         & .technology-list {
             list-style: none;
             display: inline-flex;
@@ -38,10 +47,12 @@
             }
         }
     }
+    }
     & > .git-button-container {
         display: flex;
         justify-content: center;
         margin-top: 50px;
+        transition: transform 250ms;
         & > a {
             & > .git-button {
                 background: transparent;
@@ -53,5 +64,8 @@
                 cursor: pointer;
             }
         }
+    }
+    & > .git-button-container:hover {
+        transform: translateY(-10px);
     }
 }

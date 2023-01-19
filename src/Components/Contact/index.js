@@ -1,4 +1,5 @@
 import React from 'react';
+import Socials from '../Socials';
 import './_Contact.scss';
 
 function Contact() {
@@ -10,6 +11,7 @@ function Contact() {
                 <p className="contact-text">I'm always open to making new connections. If you have any questions or would like to say hello, drop me an email! I'll get back to ya as soon as I can! </p>
                 <a href="mailto: isaq98@gmail.com"><button className="contact-button">Get in Touch</button></a>
             </div>
+            <Socials />
         </section>
     )
 }

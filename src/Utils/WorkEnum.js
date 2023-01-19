@@ -34,31 +34,37 @@ export const projectsEnum = [
     {
         title: 'Monthly Expense Tracker',
         description: 'Full stack webapp for helping me track monthly expenses. Built with Python (Flask & SQLAlchemy), React, and SASS.',
-        technologies: ['Python', 'Flask', 'React', 'SASS']
+        technologies: ['Python', 'Flask', 'React', 'SASS'],
+        link: "https://github.com/isaq98/finance-tracker"
     },
     {
         title: 'Climbing Route Locator',
         description: 'Single page webapp integrating the Mountain Project\'s API with Google Maps API for searching and identifying climbing routes in queried locations',
-        technologies: ['React', 'CSS']
+        technologies: ['React', 'CSS'],
+        link: "https://github.com/isaq98/react_climbing_app"
     },
     {
         title: 'Java Search Engine',
         description: 'A completely functional search engine that functions through receivng a .txt file or URL',
-        technologies: ['Java', 'HTML']
+        technologies: ['Java', 'HTML'],
+        link: "https://github.com/isaq98/searchEngine"
     },
     {
         title: 'Data Visualizations of the SFFD',
         description: 'JavaScript project visualizing SFFD response times in different areas of San Francisco. Highlighting discrepencies between lower & higher income areas.',
-        technologies: ['JavaScript', 'D3']
+        technologies: ['JavaScript', 'D3'],
+        link: "https://github.com/isaq98/SFFD-data-vis"
     },
     {
         title: 'TheMovieDB Search Tool',
         description: 'Personal project leveraging TheMovieDB\'s API to help recommend movies. Built with JavaScript and CSS',
-        technologies: ['JavaScript', 'CSS']
+        technologies: ['JavaScript', 'CSS'],
+        link: "https://github.com/isaq98/movie_app"
     },
     {
         title: 'Assembly Emulator',
         description: 'A school project to emulate ARM Assembly instructions in C code',
-        technologies: ['C']
+        technologies: ['C'],
+        link: "https://github.com/isaq98/assembly-emulator"
     }
 ]
