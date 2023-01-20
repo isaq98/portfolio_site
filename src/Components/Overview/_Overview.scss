@@ -1,5 +1,6 @@
 .overview {
-    height: 90vh;
+    padding-top: 35px;
+    height: 92vh;
     .overview-container {
         display: flex;
         justify-content: center;
@@ -7,7 +8,11 @@
         & > .about-text {
             color: #808080;
             & > .tiny-hello-div {
+                color: #f2aa4c;
                 height: 5px;
+                & > h5 {
+                    font-size: 15pt;
+                }
             }
             & > .name-div {
                 height: 30px;

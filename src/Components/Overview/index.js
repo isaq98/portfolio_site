@@ -17,7 +17,7 @@ function Overview(props) {
                         <h2>I build things for the web.</h2>
                     </div>
                     <div className="paragraph-div">
-                        <p>I'm a software engineer specializing in frontend technology to create elegant online experiences.</p>
+                        <p>I'm a software engineer specializing in frontend technology to create user friendly online experiences.</p>
                     </div>
                 </div>
             </div>
