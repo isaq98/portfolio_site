@@ -8,8 +8,8 @@ function Contact() {
             <h2 className="section-header">Contact Me</h2>
             <div className="contact-div">
                 <h1 className="big-contact-font">Say Hello!</h1>
-                <p className="contact-text">I'm always open to making new connections. If you have any questions or would like to say hello, drop me an email! I'll get back to ya as soon as I can! </p>
-                <a href="mailto: isaq98@gmail.com"><button className="contact-button">Get in Touch</button></a>
+                <p className="contact-text">My inbox is always open. If you have any questions or would like to say hello, drop me an email! I'll get back to you as soon as I can. </p>
+                <a href="mailto: isaq98@gmail.com"><button className="contact-button">Email Me</button></a>
             </div>
             <Socials />
         </section>

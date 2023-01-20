@@ -35,7 +35,7 @@ function Projects() {
 
     return(
         <section className="projects" id="projects">
-            <h2 className="section-header">Projects</h2>
+            <h2 className="section-header">Things I Have Built </h2>
             <div className="projects-container">
                 {renderProjectDivs()}
             </div>
