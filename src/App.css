@@ -4,6 +4,9 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  background-color: #000;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

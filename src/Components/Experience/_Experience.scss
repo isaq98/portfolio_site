@@ -2,10 +2,44 @@
     height: 55vh;
     max-width: 900px;
     margin: 0px auto;
+    color: #A6A6A6;
+    & > h2 {
+        color: #fff;
+    }
+    & > h2::after {
+        content: "";
+        display: block;
+        position: relative;
+        top: -10px;
+        width: 300px;
+        height: 1px;
+        margin-left: 80px;
+        background-color: #fff;
+    }
     & > .experience-container {
+        display: flex;
         & .job-list {
+            position: relative;
+            top: 20px;
+            display: inline-flex;
+            flex-direction: column;
             & > .button-row {
-                //display: flex;
+                height: 50px;
+                margin-bottom: 15px;
+                background-color: transparent;
+                border-radius: 5px;
+                color: #A6A6A6;
+            }
+        }
+        & .job-styled-panel {
+            position: relative;
+            display: inline-flex;
+            width: 80%;
+            left: 100px;
+            & > .job-content {
+                & > .work-experience-header {
+                    color: #fff;
+                }
             }
         }
     }
