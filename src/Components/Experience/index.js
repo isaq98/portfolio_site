@@ -1,6 +1,7 @@
 import React, {useState, useEffect } from 'react';
 import './_Experience.scss';
 import { workEnum } from '../../Utils/WorkEnum';
+import TextTransition, { presets } from "react-text-transition";
 
 function Experience() {
     const [storedJSX, setJSX] = useState(null);
@@ -18,6 +19,7 @@ function Experience() {
         const { company, title, time, description } = workEnum[buttonIndex];
         return (
             <>
+            <TextTransition springConfig={presets.default}>
                 <h3 className="work-experience-header">{`${title}`} <span className='company'>{`@ ${company}`}</span></h3>
                 <p>{time}</p>
                 <div className="work-experience-bulletins">
@@ -29,6 +31,7 @@ function Experience() {
                     })}
                     </ul>
                 </div>
+            </TextTransition>
             </>
         );
     }
