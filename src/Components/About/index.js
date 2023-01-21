@@ -9,8 +9,8 @@ function About() {
                 <div className="photo-container">
                     <img
                      className="img"
-                     width={200}
-                     height={300}
+                     width={310}
+                     height={450}
                      src={require("../../Images/me.jpg")}
                      alt="Sameer"
                     />

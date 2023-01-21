@@ -13,7 +13,8 @@
         position: relative;
         top: -10px;
         left: 250px;
-        width: 500px;
+        //width: 500px;
+        width: 200px;
         height: 1px;
         background-color: #fff;
     }
@@ -25,12 +26,18 @@
         font-size: 20px;
     }
     & > .experience-container {
-        display: flex;
+        @media screen and (min-width: 769px) {
+            display: flex;
+        }
         & .job-list {
             position: relative;
             top: 20px;
             display: inline-flex;
             flex-direction: column;
+            @media screen and (max-width: 769px) {
+                display: block;
+                left: 92px;
+            }
             & > .button-row {
                 height: 50px;
                 margin-bottom: 5px;
