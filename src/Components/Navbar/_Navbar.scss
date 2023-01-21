@@ -21,9 +21,30 @@
     }
     & > .navigation-list-container {
         padding-right: 20px;
+        & .resume-button {
+            padding: 0 30px;
+            margin: 0px 20px;
+            display: inline-flex;
+            border: 1px solid #F2AA4CFF;
+            color: #F2AA4CFF;
+            border-radius: 3px;
+            width: 25px;
+            height: 35px;
+            justify-content: center;
+            align-items: center;
+            & > a {
+                font-size: 14px;
+            }
+        }
+        & .resume-button:hover {
+            cursor: pointer;
+            background-color: #252525;
+            transition: 400ms;
+        }
     }
     & .navigation-list {
         display: inline;
+        counter-reset: item;
         & > a {
             display: inline;
             color: black;
@@ -32,9 +53,15 @@
                 color: #808080;
                 display: inline;
                 padding: 10px;
+                counter-increment: item;
+                font-size: 15px;
+            }
+            & > li::before {
+                content: "0" counter(item) ". ";
+                color: #F2AA4CFF;
             }
             & > li:hover {
-                color: #fff;
+                color: #F2AA4CFF;
             }
         }
     }

@@ -13,8 +13,10 @@ function Navbar() {
                     <a href='#experience'><li>Experience</li></a>
                     <a href="#projects"><li>Projects</li></a>
                     <a href="#contact"><li>Contact</li></a>
-                    <a><li>Resume</li></a>
                 </ul>
+                <div className="resume-button">
+                    <a target="_blank" rel="noopener noreferrer">Resume</a>
+                </div>
             </div>
         </div>
     )
