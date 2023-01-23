@@ -1,8 +1,10 @@
 .social-icons {
     display: flex;
-    width: 700px;
+    max-width: 700px;
+    min-width: 250px;
     justify-content: space-between;
-    padding-top: 5%;
+    //padding-top: 5%;
+    padding: 5% 0 5% 0;
     margin: auto;
     & > a {
         & > svg {

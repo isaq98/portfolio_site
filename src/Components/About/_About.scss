@@ -1,7 +1,17 @@
 .about {
-    height: 100vh;
+    //height: 100vh;
     max-width: 900px;
     margin: 0px auto;
+    padding-top: 17%;
+    @media only screen and (max-width: 768px) { 
+        margin: 0px 25px;
+        //display: flex;
+        // flex-direction: column;
+        // align-items: center;
+    }
+    @media only screen and (max-width: 500px) {
+        margin-top: 150px;
+    }
     & > .section-heading {
         color: #fff;
     }
@@ -10,7 +20,7 @@
         display: block;
         position: relative;
         top: -10px;
-        width: 300px;
+        //width: 300px;
         height: 1px;
         margin-left: 120px;
         background-color: #fff;
@@ -23,7 +33,13 @@
         font-size: 20px;
     }
     & .about-me-container {
-        display: flex;
+        @media only screen and (min-width: 1024px) {
+            display: flex;
+        }
+        & > .photo-container {
+            display: flex;
+            justify-content: center;
+        }
         & .snippet-container {
             max-width: 600px;
             padding-left: 50px;

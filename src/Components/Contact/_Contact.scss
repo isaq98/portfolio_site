@@ -1,7 +1,7 @@
 .contact {
     height: 55vh;
     max-width: 700px;
-    margin: 0 auto;
+    margin: 150px auto 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,6 +17,9 @@
         margin-right: 5px;
     }
     & > .contact-div {
+        @media screen and (max-width: 500px) {
+            width: 250px;
+        }
         & > .big-contact-font {
             color:#fff;
             font-size: 2.5em;

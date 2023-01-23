@@ -12,6 +12,74 @@
     &.hide {
         top: -6rem;
     }
+    & > .hamburger-menu-icon {
+        display: flex;
+        justify-content: flex-end;
+        width:  100%;
+        padding-right: 25px;
+        padding: 10px 25px 0 0;
+        fill: #fff;
+
+        &.active {
+            fill: #F2AA4CFF;
+            transition: 400ms;
+            & .mobile-friendly-navbar {
+                background-color: #000;
+                height: 100vh;
+                width: 40%;
+                counter-reset: item;
+                & > .hamburger-svg {
+                    transition: all .3s ease-in-out;
+                }
+                & > svg {
+                    float: right;
+                }
+                & .mobile-navigation {
+                    color: white;
+                    height: 95%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    & > .mobile-navigation-list {
+                        display: flex;
+                        flex-direction: column;
+                        height: 45%;
+                        justify-content: space-between;
+                        & > a {
+                            counter-increment: item;
+                            color: white;
+                            text-decoration: none;
+                            list-style: none;
+                            & > li:hover {
+                                transition: 200ms;
+                                color: #F2AA4CFF;
+                            }
+                        }
+                        & > a::before {
+                            content: "0" counter(item) ".";
+                            color: #F2AA4CFF;
+                        }
+                    }
+                    & > a {
+                        color: #F2AA4CFF;
+                        border: 1px solid #F2AA4CFF;
+                        border-radius: 5px;
+                        padding: 15px;
+                        width: 75px;
+                        margin-left: 20px;
+                        margin-top: 65px;
+                        padding-left: 35px;
+                    }
+                    & > a:hover {
+                        background-color: #252525;
+                        transition: 400ms;
+                    }
+                }
+            }
+        }
+    }
     & > .logo, .navigation-list-container {
         height: 75%;
         padding-top: 20px;
