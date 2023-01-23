@@ -26,7 +26,7 @@
             & .mobile-friendly-navbar {
                 background-color: #000;
                 height: 100vh;
-                width: 35%;
+                width: 40%;
                 counter-reset: item;
                 & > .hamburger-svg {
                     transition: all .3s ease-in-out;
@@ -45,7 +45,7 @@
                     & > .mobile-navigation-list {
                         display: flex;
                         flex-direction: column;
-                        height: 40%;
+                        height: 45%;
                         justify-content: space-between;
                         & > a {
                             counter-increment: item;
@@ -61,6 +61,20 @@
                             content: "0" counter(item) ".";
                             color: #F2AA4CFF;
                         }
+                    }
+                    & > a {
+                        color: #F2AA4CFF;
+                        border: 1px solid #F2AA4CFF;
+                        border-radius: 5px;
+                        padding: 15px;
+                        width: 75px;
+                        margin-left: 20px;
+                        margin-top: 65px;
+                        padding-left: 35px;
+                    }
+                    & > a:hover {
+                        background-color: #252525;
+                        transition: 400ms;
                     }
                 }
             }
