@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import './_Navbar.scss';
 import useScrollDirection from '../../Utils/useScrollDirection';
 import useOutsideClick from '../../Utils/useOutsideClick';
+import pdf from '../../Utils/resume.pdf';
 
 function Navbar() {
     const [windowWidth, setWindowWidth] = useState([window.innerWidth]);
@@ -44,7 +45,7 @@ function Navbar() {
                         <a href="#projects"><li>Projects</li></a>
                         <a href="#contact"><li>Contact</li></a>
                     </ol>
-                    <a target="_blank" rel="noopener noreferrer">Resume</a>
+                    <a className="pdf-link" target="_blank" rel="noopener noreferrer" href={pdf}>Resume</a>
                 </nav>
             </div>
         )
@@ -62,7 +63,7 @@ function Navbar() {
                         <a href="#contact"><li>Contact</li></a>
                     </ul>
                 <div className="resume-button">
-                    <a target="_blank" rel="noopener noreferrer">Resume</a>
+                    <a className="pdf-link" target="_blank" rel="noopener noreferrer" href={pdf} >Resume</a>
                 </div>
                 </div>
             </> 
